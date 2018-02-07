@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: rng
+  name: rng-service
   labels:
-    app: playfull
+    app: rng
     tier: backend
 spec:
   selector:
-    app: playfull
+    app: rng
   ports:
     - protocol: TCP
       port: 80

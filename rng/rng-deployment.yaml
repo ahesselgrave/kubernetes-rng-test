@@ -1,18 +1,18 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gateway
+  name: rng-deployment
   labels:
-    app: playfull
+    app: rng
     tier: backend
 spec:
   selector:
     matchLabels:
-      app: playfull
+      app: rng
   template:
     metadata:
       labels:
-        app: playfull
+        app: rng
     spec:
       containers:
       - name: rng

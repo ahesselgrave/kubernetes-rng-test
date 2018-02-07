@@ -1,18 +1,18 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gateway
+  name: gateway-deployment
   labels:
     app: playfull
     tier: backend
 spec:
   selector:
     matchLabels:
-      app: playfull
+      app: gateway
   template:
     metadata:
       labels:
-        app: playfull
+        app: gateway
     spec:
       containers:
       - name: gateway
