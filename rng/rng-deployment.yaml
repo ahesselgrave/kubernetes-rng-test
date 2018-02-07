@@ -1,4 +1,4 @@
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: rng-deployment
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: rng
-      - image: ahesselgrave/rng
+        image: ahesselgrave/rng
         ports:
         - containerPort: 80

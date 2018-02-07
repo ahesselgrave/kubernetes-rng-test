@@ -1,4 +1,4 @@
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gateway-deployment
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: gateway
-      - image: ahesselgrave/gateway
+        image: ahesselgrave/gateway
         ports:
         - containerPort: 80
