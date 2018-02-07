@@ -4,7 +4,7 @@ metadata:
   name: gateway-deployment
   labels:
     app: playfull
-    tier: backend
+    tier: frontend
 spec:
   selector:
     matchLabels:

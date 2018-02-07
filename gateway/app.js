@@ -1,5 +1,5 @@
 const express = require('express');
-const request = require('request-promise-native');
+const request = require('request-promise');
 
 let app = express();
 let PORT = 80;
