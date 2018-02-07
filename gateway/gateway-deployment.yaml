@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: apps/v1beta2  # TODO(ahesselgrave): Update to apps/v1 when GKE supports K8s 1.9
 kind: Deployment
 metadata:
   name: gateway-deployment
